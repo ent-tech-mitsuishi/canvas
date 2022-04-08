@@ -1,0 +1,29 @@
+@import "setting/mixin";
+@import "setting/base";
+
+// 全ページで使うものはここに記述
+// コモン
+@import "partial/common";
+// ヘッダー
+@import "partial/header";
+// フッター
+@import "partial/footer";
+
+// 以下サンプル
+// pc非表示
+.pc-none {
+  display: none;
+
+  @include max-screen($bp_sp) {
+    display: block;
+  }
+}
+
+// sp非表示
+.sp-none {
+  @include max-screen($bp_sp) {
+    display: none;
+  }
+}
+
+// 追加したい場合はここから下へ上に習って記述

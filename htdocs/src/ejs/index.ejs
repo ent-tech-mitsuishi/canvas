@@ -1,0 +1,24 @@
+<%
+// ページのIDを記述
+// これが固有のcssの名前になります。
+var pageID = "top";
+// 固有のcssがある場合は true に
+var unique_css = false;
+// 言語設定
+var lang = "ja";
+// そのファイルの相対パス
+var relative_path = "./";
+// 一旦気にしないで大丈夫
+var myMeta = meta[lang][pageID];
+%>
+<%# head %>
+<%- include( './_partial/_head',{lang:lang,pageID:pageID,relative_path:relative_path,unique_css:unique_css}) %>
+<%# head %>
+
+<%# ここから下にhtml書いてね このコメントは反映されません%>
+
+<%# ここから上にhtml書いてね このコメントは反映されません%>
+
+<%# foot/ %>
+<%- include( './_partial/_foot',{lang:lang,pageID:pageID,relative_path:relative_path}) %>
+<%# /foot %>

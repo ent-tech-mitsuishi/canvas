@@ -1,0 +1,34 @@
+<%
+var myMeta = meta[lang][pageID];
+%>
+<!DOCTYPE html>
+<html class="<%= pageID %> <%= lang %>" lang="<%= lang %>">
+
+<head>
+  <meta charset="utf-8">
+  <title><%= myMeta.title %></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="<%- myMeta.description %>">
+  <meta name="keywords" content="<%- myMeta.keywords %>">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="<%= myMeta.title %>">
+  <meta name="twitter:description" content="<%- myMeta.description %>">
+  <meta name="twitter:url" content="<%= myMeta.og_url %>">
+  <meta name="twitter:image" content="<%= myMeta.og_img %>">
+  <meta name="twitter:site" content="<%= myMeta.twitter_id %>">
+  <meta property="og:site_name" content="<%= myMeta.title %>">
+  <meta property="og:title" content="<%= myMeta.title %>">
+  <meta property="og:description" content="<%- myMeta.description %>">
+  <meta property="og:url" content="<%= myMeta.og_url %>">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="<%= myMeta.og_img %>">
+  <link rel="shortcut icon" href="<%= relative_path %>assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" href="<%= myMeta.url %>assets/img/webclip.png">
+  <link rel="stylesheet" href="<%= relative_path %>assets/css/lib.css">
+  <link rel="stylesheet" href="<%= relative_path %>assets/css/share.css">
+  <% if (unique_css) { %>
+  <link rel="stylesheet" href="<%= relative_path %>assets/css/<%= pageID %>.css">
+  <% } %>
+</head>
+
+<body>

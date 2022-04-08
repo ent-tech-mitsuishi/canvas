@@ -1,0 +1,63 @@
+/*========================================
+*	common
+========================================*/
+// セレクション
+::selection {
+  color: $common_font;
+  background: $common_bg;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  height: 100%;
+  color: $common_font;
+  background-color: $common_bg;
+  font-family: $font-base;
+}
+
+body {
+  width: 100%;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+tr,
+th,
+td {
+  font-weight: normal;
+  text-align: left;
+}
+
+img,
+picture {
+  -webkit-backface-visibility: hidden;
+  width: 100%;
+  max-width: 100%;
+  pointer-events: none;
+  vertical-align: bottom;
+}

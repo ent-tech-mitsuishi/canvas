@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+// ===================================================================
+// 設定
+// ===================================================================
+
+// breakpointの数値
+$bp_sp:767px;
+
+// photoshopのカンバスサイズ
+$vp_pc:3000;
+$vp_sp:750;
+
+// font
+// noto-sans 不要な場合は適宜変更してください。
+@import url('//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+// font-family: 'Noto Sans JP', sans-serif;
+// regular400 bold700
+$font-base:'Noto Sans JP',
+sans-serif;
+
+// color
+// ===================================================================
+// 基本 消したら動かないよ
+// ===================================================================
+$selection_color: #fff;
+$selection_bg: #000;
+$common_font: #000;
+$common_bg:#fff;
