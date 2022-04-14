@@ -52,7 +52,8 @@ picture {
   -webkit-backface-visibility: hidden;
   width: 100%;
   max-width: 100%;
-  pointer-events: none; }
+  pointer-events: none;
+  vertical-align: bottom; }
 
 .pc-none {
   display: none; }
@@ -63,5 +64,21 @@ picture {
 @media only screen and (max-width: 767px) {
   .sp-none {
     display: none; } }
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+canvas {
+  border: 1px solid #000; }
 
 /*# sourceMappingURL=../maps/share.css.map */
